@@ -180,7 +180,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Share some basics about your place"
-          subtitle="What amenitis do you have?"
+          subtitle="What amenitis,food and drinks do you have?"
         />
         <Counter 
           onChange={(value) => setCustomValue('guestCount', value)}
@@ -192,8 +192,8 @@ const RentModal = () => {
         <Counter 
           onChange={(value) => setCustomValue('roomCount', value)}
           value={roomCount}
-          title="Rooms" 
-          subtitle="How many rooms do you have?"
+          title="Rooms/Tables" 
+          subtitle="How many rooms/tables do you have?"
         />
         <hr />
         <Counter 
@@ -254,7 +254,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Now, set your price"
-          subtitle="How much do you charge per night?"
+          subtitle="How much do you charge per meal/night?"
         />
         <Input
           id="price"
@@ -274,7 +274,7 @@ const RentModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={rentModal.isOpen}
-      title="Airbnb your home!"
+      title="List your business and home!"
       actionLabel={actionLabel}
       onSubmit={handleSubmit(onSubmit)}
       secondaryActionLabel={secondaryActionLabel}

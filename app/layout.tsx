@@ -13,8 +13,8 @@ import ClientOnly from './components/ClientOnly';
 import getCurrentUser from './actions/getCurrentUser';
 
 export const metadata = {
-  title: 'Airbnb',
-  description: 'Airbnb Clone',
+  title: 'ZimTourer',
+  description: 'Explore and Book here',
 }
 
 const font = Nunito({ 
@@ -46,3 +46,4 @@ export default async function RootLayout({
     </html>
   )
 }
+

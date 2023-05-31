@@ -3,19 +3,19 @@
 import { usePathname, useSearchParams } from 'next/navigation';
 import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
 import { 
-  GiBarn, 
   GiBoatFishing, 
   GiCactus, 
   GiCastle, 
   GiCaveEntrance, 
   GiForestCamp, 
+  GiHutsVillage, 
   GiIsland,
-  GiWindmill
+  GiLion,
 } from 'react-icons/gi';
-import { FaSkiing } from 'react-icons/fa';
+import { FaBed } from 'react-icons/fa';
 import { BsSnow } from 'react-icons/bs';
+import { BiRestaurant } from 'react-icons/bi';
 import { IoDiamond } from 'react-icons/io5';
-import { MdOutlineVilla } from 'react-icons/md';
 
 import CategoryBox from "../CategoryBox";
 import Container from '../Container';
@@ -23,19 +23,19 @@ import Container from '../Container';
 
 export const categories = [
   {
-    label: 'Beach',
+    label: 'Dam',
     icon: TbBeach,
-    description: 'This property is close to the beach!',
+    description: 'This property is close to the dam!',
   },
   {
-    label: 'Windmills',
-    icon: GiWindmill,
-    description: 'This property is has windmills!',
+    label: 'Lodges',
+    icon: FaBed,
+    description: 'This property is a lodge!',
   },
   {
-    label: 'Modern',
-    icon: MdOutlineVilla,
-    description: 'This property is modern!'
+    label: 'Restaurant',
+    icon: BiRestaurant,
+    description: 'This property is a restaurant!'
   },
   {
     label: 'Countryside',
@@ -55,22 +55,22 @@ export const categories = [
   {
     label: 'Lake',
     icon: GiBoatFishing,
-    description: 'This property is near a lake!'
+    description: 'This listing is near a lake!'
   },
   {
-    label: 'Skiing',
-    icon: FaSkiing,
-    description: 'This property has skiing activies!'
+    label: 'Wildlife',
+    icon: GiLion,
+    description: 'This property has wildlife activies!'
   },
   {
-    label: 'Castles',
+    label: 'Ruins',
     icon: GiCastle,
-    description: 'This property is an ancient castle!'
+    description: 'This property is near the Zimbabwe monumental Ruins!'
   },
   {
     label: 'Caves',
     icon: GiCaveEntrance,
-    description: 'This property is in a spooky cave!'
+    description: 'This attraction is one of the caves in Zimbabwe!'
   },
   {
     label: 'Camping',
@@ -78,22 +78,22 @@ export const categories = [
     description: 'This property offers camping activities!'
   },
   {
-    label: 'Arctic',
+    label: 'Marondera',
     icon: BsSnow,
-    description: 'This property is in arctic environment!'
+    description: 'The weather in this part here is very cold!'
   },
   {
-    label: 'Desert',
+    label: 'Sand',
     icon: GiCactus,
-    description: 'This property is in the desert!'
+    description: 'This property has the natural sand surfaces!'
   },
   {
-    label: 'Barns',
-    icon: GiBarn,
-    description: 'This property is in a barn!'
+    label: 'Huts',
+    icon: GiHutsVillage,
+    description: 'This property is in a hut!'
   },
   {
-    label: 'Lux',
+    label: 'Hotels',
     icon: IoDiamond,
     description: 'This property is brand new and luxurious!'
   }
